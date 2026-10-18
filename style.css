@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/* header */
+
+header {
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.li {
+    padding: 5px 130px;
+    
+}
+
+.li:hover {
+    background-color: aqua;
+    
+}
+
+/* main */
+
+main div {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+footer {
+    background-color: blueviolet;
+
+}
+
+
+/* general */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+}
