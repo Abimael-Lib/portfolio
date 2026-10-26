@@ -1,51 +1,166 @@
+/*
+Colours
+
+Main background: #0F172A
+Cards: #1E293B
+Main text: #F8FAFC
+Secondary text: #94A3B8
+Accent colour: #38BDF8
+
+*/
+
+
+
+
+
+
+
+/* General --------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
-    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px;
+    background-color: #0F172A;
+    color: #fff;
+    box-sizing: border-box;
 }
 
 
-/* header */
-
-header {
-    background-color: blueviolet;
-    border-radius: 5px;
+h2, p, a, li {
+    color: #94A3B8;
 }
 
-header ul {
+h1 {
+    color: #38BDF8;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+a {
+    color: #F8FAFC;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+
+/* header ------------------------------------------------------- */
+
+ul {
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: #1E293B;
+}
+
+nav ul {
+    background-color: #1E293B;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .li {
     padding: 5px 130px;
-    
+    border-radius: 1rem;
 }
 
 .li:hover {
-    background-color: aqua;
+    background-color: #38BDF8;
+}
+
+/* main ------------------------------------------------------- */
+
+main div {
+    background-color: #1E293B;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.1rem;
+
     
 }
 
-/* main */
+/* projects ------------------------------------------------------- */
 
-main div {
-    background-color: blueviolet;
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(100px auto);
+    gap: 10px;
+}
+
+
+
+.projects:hover {
+    background-color: #38BDF8;
+}
+
+#projects-container div img {
+    height: 200px;
+    width: 100%;
+}
+
+#projects-container div p {
+    color: #38BDF8;
+}
+
+
+
+/* skills ------------------------------------------------------- */
+#skills-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/* contact me --------------------------------------------------- */
+#contact-me a:hover {
+    color: #38BDF8;
+}
+
+#contact-me ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+/* footer ------------------------------------------------------- */
+
+footer {
+    background-color: #1E293B;
+    padding: 1rem;
+
+}
+
+footer p {
     text-align: center;
 }
 
-footer {
-    background-color: blueviolet;
-
-}
 
 
-/* general */
 
-ul {
-    list-style-type: none;
-}
 
-a {
-    color: white;
+
+/* Desktop ------------------------------------------------------ */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
