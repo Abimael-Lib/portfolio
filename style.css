@@ -89,6 +89,31 @@ main div {
     
 }
 
+/* presentation -------------------------------------------------*/
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#profile-image {
+    width: 600px;
+    height: 100%;
+    border-radius: 100%;
+    padding: 50px;
+}
+
+#presentation-buttons button {
+    background-color: #38BDF8;
+    color: #F8FAFC;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+
+
 /* projects ------------------------------------------------------- */
 
 #projects-container {
@@ -99,30 +124,48 @@ main div {
 }
 
 
+.projects {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
 .projects:hover {
     background-color: #38BDF8;
+    transform: scale(1.1);
 }
+
+
+
 
 #projects-container div img {
     height: 200px;
     width: 100%;
 }
 
-#projects-container div p {
-    color: #38BDF8;
+
+
+.project-buttons {
+    display: flex;
+    flex-direction: column;
 }
 
 
 
 /* skills ------------------------------------------------------- */
+
+ul li img {
+    height: 50px;
+    width: 100%;
+}
+
 #skills-container {
     display: flex;
     justify-content: space-around;
 }
 
 
-
+#vitest {
+    color: #00FF74;
+}
 
 
 
