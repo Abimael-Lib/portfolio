@@ -34,7 +34,7 @@ function App() {
         <div id="presentation">
             <h1>I'm Carlos Abimael Gonzalez</h1>
             <h2>Front-end developer</h2>
-            <img id="profile-image" src="/public/images/perfil.jpg" alt="profile" />
+            <img id="profile-image" src="/portfolio/images/perfil.jpg" alt="profile" />
             <div id="presentation-buttons">
                 <button>Watch Projects</button>
                 <button>Contact me</button>
@@ -52,7 +52,7 @@ function App() {
             <div id="projects-container">
                 <div id="landing-page" class="projects">
                     <h3>Gym Landing Page</h3>
-                    <img src="/public/images/gym-screenshot.png" alt="Gym app Screenshot" />
+                    <img src="/portfolio/images/gym-screenshot.png" alt="Gym app Screenshot" />
                     <p>A simple gym landing page</p>
                     <p>HTML + CSS</p>
                     <div class="project-buttons">
