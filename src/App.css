@@ -21,12 +21,14 @@ Accent colour: #38BDF8
 }
 
 body {
+    display: grid;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 16px;
+    padding: 1em;
     background-color: #0F172A;
     color: #fff;
     box-sizing: border-box;
+    gap: 1rem;
 }
 
 
@@ -40,7 +42,10 @@ h1 {
 
 ul {
     list-style-type: none;
-    padding-left: 0%;
+    padding-left: 0;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    background-color: #1E293B;
 }
 
 a {
@@ -55,21 +60,17 @@ nav a:hover {
 
 /* header ------------------------------------------------------- */
 
-ul {
-    border-radius: 1rem;
-    margin: 1rem;
-    background-color: #1E293B;
-}
 
 nav ul {
-    background-color: #1E293B;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 0.1rem;
+    background-color: #1E293B;
+    justify-content: space-around;
 }
 
 .li {
-    padding: 5px 130px;
+    padding: 6px 12px;
     border-radius: 1rem;
 }
 
@@ -83,10 +84,6 @@ main div {
     background-color: #1E293B;
     text-align: center;
     border-radius: 1rem;
-    margin: 1rem;
-    padding: 0.1rem;
-
-    
 }
 
 /* presentation -------------------------------------------------*/
@@ -99,7 +96,8 @@ main div {
 }
 
 #profile-image {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 100%;
     border-radius: 100%;
     padding: 50px;
@@ -112,24 +110,28 @@ main div {
     border-radius: 50px;
 }
 
+/* about me ------------------------------------------------------- */
+
 
 
 /* projects ------------------------------------------------------- */
 
 #projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(100px auto);
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 
 .projects {
+    background-color: #38BDF8;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .projects:hover {
-    background-color: #38BDF8;
     transform: scale(1.1);
 }
 
@@ -137,8 +139,8 @@ main div {
 
 
 #projects-container div img {
-    height: 200px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -153,13 +155,16 @@ main div {
 /* skills ------------------------------------------------------- */
 
 ul li img {
-    height: 50px;
     width: 100%;
+    max-width: 50px;
+    height: 100%;
 }
 
 #skills-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 
@@ -170,13 +175,18 @@ ul li img {
 
 
 /* contact me --------------------------------------------------- */
+#contact-me {
+    gap: 1rem;
+}
+
 #contact-me a:hover {
     color: #38BDF8;
 }
 
 #contact-me ul {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    
 }
 
 
@@ -206,4 +216,8 @@ footer p {
         max-width: 1200px;
         margin: 0 auto;
     }
+    #projects-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
 }

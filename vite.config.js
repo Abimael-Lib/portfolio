@@ -5,7 +5,4 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   base: '/portfolio/',
-  build: {
-    assetDir: 'portfolio/assets'
-  }
 })

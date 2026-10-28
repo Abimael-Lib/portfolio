@@ -18,7 +18,7 @@ import {
 function App() {
   
   return (
-    <body>
+    <div>
     <header>
         <nav>
             <ul>
@@ -29,15 +29,15 @@ function App() {
             </ul>
         </nav>
     </header>
-    
+
     <main>    
         <div id="presentation">
             <h1>I'm Carlos Abimael Gonzalez</h1>
             <h2>Front-end developer</h2>
             <img id="profile-image" src="/portfolio/images/perfil.jpg" alt="profile" />
             <div id="presentation-buttons">
-                <button>Watch Projects</button>
-                <button>Contact me</button>
+                <a href="#projects"><button>Watch Projects</button></a>
+                <a href="#contact-me"><button>Contact me</button></a>
             </div>
         </div>
         
@@ -50,14 +50,14 @@ function App() {
             <h2>Projects</h2>
             
             <div id="projects-container">
-                <div id="landing-page" class="projects">
+                <div id="landing-page" className="projects">
                     <h3>Gym Landing Page</h3>
                     <img src="/portfolio/images/gym-screenshot.png" alt="Gym app Screenshot" />
                     <p>A simple gym landing page</p>
                     <p>HTML + CSS</p>
-                    <div class="project-buttons">
-                        <a target="_blank" class="project-button" href="https://github.com/Abimael-Lib/landing-gimnasio">Code</a>
-                        <a target="_blank" class="project-button" href="https://abimael-lib.github.io/landing-gimnasio/">Live Demo</a>
+                    <div className="project-buttons">
+                        <a target="_blank" className="project-button" href="https://github.com/Abimael-Lib/landing-gimnasio">Code</a>
+                        <a target="_blank" className="project-button" href="https://abimael-lib.github.io/landing-gimnasio/">Live Demo</a>
                     </div>
                 </div>                
             </div>
@@ -127,8 +127,7 @@ function App() {
     <footer>
         <p>2026 Carlos Abimael Gonzalez</p>
     </footer>
-
-</body>
+    </div>
   )
 }
 
