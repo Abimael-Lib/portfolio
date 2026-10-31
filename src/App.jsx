@@ -50,7 +50,7 @@ function App() {
             <h2>Projects</h2>
             
             <div id="projects-container">
-                <div id="landing-page" className="projects">
+                <div className="projects">
                     <h3>Gym Landing Page</h3>
                     <img src="/portfolio/images/gym-screenshot.png" alt="Gym app Screenshot" />
                     <p>A simple gym landing page</p>
@@ -58,6 +58,16 @@ function App() {
                     <div className="project-buttons">
                         <a target="_blank" className="project-button" href="https://github.com/Abimael-Lib/landing-gimnasio">Code</a>
                         <a target="_blank" className="project-button" href="https://abimael-lib.github.io/landing-gimnasio/">Live Demo</a>
+                    </div>
+                </div>
+                <div className="projects">
+                    <h3>To-do List</h3>
+                    <img src="public\images\todo-screenshot.png" alt="to-do list application" />
+                    <p>A simple to-do list</p>
+                    <p>HTML + CSS + JavaScript + TypeScript + Next.js + Supabase</p>
+                    <div className="project-buttons">
+                        <a target="_blank" className="project-button" href="https://github.com/Abimael-Lib/todo-list">Code</a>
+                        <a target="_blank" className="project-button" href="https://todo-list-olive-three-98.vercel.app/">Live Demo</a>
                     </div>
                 </div>                
             </div>
